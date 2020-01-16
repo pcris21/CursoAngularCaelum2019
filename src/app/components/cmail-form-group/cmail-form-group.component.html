@@ -1,0 +1,9 @@
+<div class="cmailInputForm">
+  <div class="mdl-textfield mdl-textfield--floating-label" [ngClass]="{'is-invalid': campo.invalid && campo.touched}">
+  <ng-content></ng-content>
+  <!-- torna o componente dinamico para que possa receber elementos diferentes: hora um input, hor textarea, etc -->
+
+  <label class="mdl-textfield__label" [for]="idCampo">{{textoDaLabel}}</label>
+  <span class="mdl-textfield__formline"></span>
+</div>
+</div>
